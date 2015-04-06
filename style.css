@@ -1,0 +1,508 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    background: rgb(242, 242, 242);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin-top: 0px;
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 90%;
+    text-align: justify;
+    height: 3em;
+    padding: 2em 5%;
+    color: #fff;
+}
+ 
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ 
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+ 
+header > div {
+    height: 100%;
+}
+ 
+header > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+header > div h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+ 
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+	display: inline-block;
+	outline: none;
+	color: #000;
+    letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: #909090;
+    text-decoration: none;
+    -webkit-transition: all .1s ease-in-out;  
+	-moz-transition: all .1s ease-in-out;  
+	-o-transition: all .1s ease-in-out;  
+	transition:  all .1s ease-in-out; 
+	outline: none;
+}
+ 
+header nav a:last-child {
+    padding-right: 0;
+}
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    position: fixed;
+    top: 120px;
+    background: url(http://i.imgur.com/N463IU9.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 83%;
+}
+
+.newpage {
+    background: rgb(242, 242, 242);
+    height: 50%;
+}
+
+.site-wrapper-about {
+    display: table;
+    background: #4fbfb8;
+    width: 100%;
+    top: 95%;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 1px #3daaa3;
+}
+
+.site-wrapper-projects {
+    display: table;
+    width: 100%;
+    top: 95%;
+    position: relative;
+    background: rgb(242, 242, 242);
+    color: #272727;
+    text-shadow: 1px 1px 1px #ededed;
+}
+
+.site-wrapper-footer {
+    display: table;
+    background: #fff;
+    width: 100%;
+    top: 95%;
+    position: relative;
+    height: 100px;
+    text-shadow: 1px 1px 1px #e2e2e2;
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.newtop {
+    top: 63%;
+}
+
+.project-list {
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-desc {
+    font-size: 1.3em;
+}
+
+.title {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 5%;
+    line-height: 1.1em;
+    letter-spacing: -2.5px;
+    color: rgb(79, 191, 184);
+    color: rgb(11, 77, 74);
+}
+
+.subtitle {
+    color: rgb(79, 191, 184);
+    margin-top: 0;
+    font-size: 4em;
+}
+
+.bigger-title {
+    font-size: 5.5em;
+    letter-spacing: -3px;
+}
+
+.about-nav {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 20px;
+    margin: 25px 25px 0px 25px;
+    background: #4fbfb8;
+    border: 3px solid #fff;
+    font-size: 1.2em;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: none;
+    box-shadow: inset 0 0 0 0 #fff;
+    -webkit-transition: all ease 0.6s;
+    -moz-transition: all ease 0.6s;
+    transition: all ease 0.6s;
+}
+
+.button:hover {
+    box-shadow: inset 0 100px 0 0 #fff;
+    color: #4fbfb8;
+}
+
+.boxpadding {
+    padding: 50px 100px 50px 100px;
+}
+
+.screenshots {
+    padding-top: 35px;
+    overflow: hidden;
+}
+
+.screenshots img {
+    margin-top: 10px;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.screenshot {
+    padding: 15px;
+    width: 35%;
+    min-width: 200px;
+    display: inline-block;
+}
+
+.about-text {
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: .5px;
+}
+
+.footer {
+    display: table-cell;
+    vertical-align: middle;
+    color: #000;
+    padding-top: 15px;
+}
+
+.logo {
+    color: #000;
+    font-size: 1.9em;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease-in-out;  
+	-moz-transition: all .3s ease-in-out;  
+	-o-transition: all .3s ease-in-out;  
+	transition:  all .3s ease-in-out; 
+}
+
+.logo:hover {
+    color: #626262;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.color {
+    color: #42cec5;
+}
+
+.box-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.9em;
+    line-height: 40px;
+    padding: 0px 0px 7px 0px;
+    border-bottom: 3px solid #fff;
+    text-transform: uppercase;
+}
+
+.about-title {
+    color: #fff;
+}
+
+.projects-title {
+    color: #000;
+    border-bottom: 3px solid #000;
+}
+
+h1 {
+    margin-top: 100px;
+    color: #000;
+    -webkit-transition: all .3s ease-in-out;  
+	-moz-transition: all .3s ease-in-out;  
+	-o-transition: all .3s ease-in-out;  
+	transition:  all .3s ease-in-out; 
+}
+
+h1:hover {
+    margin-top: 100px;
+    color: #41b4ad;
+}
+
+.grid {
+	margin: 0 auto;
+	padding: 2em 0 4em;
+    width: 100%;
+	list-style: none;
+}
+
+.grid figure {
+    display: inline-block;
+    position: relative;
+	overflow: hidden;
+	margin: 25px .8% 0;
+	min-width: 380px;
+	max-width: 560px;
+	max-height: 400px;
+	width: 45%;
+	background: #fff;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+    font-size: 1.2em;
+    font-size: 1vmax;
+    max-width: 600px;
+    max-height: 400px;
+    min-width: 90%;
+}
+
+.grid figure figcaption > a {
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+}
+
+figure.proj-effect img {
+	max-width: none;
+	width: -webkit-calc(100%);
+	width: calc(100%);
+    -webkit-transition: all 300ms ease-out;  
+    -moz-transition: all 300ms ease-out;  
+    -o-transition: all 300ms ease-out;  
+    -ms-transition: all 300ms ease-out;  
+    transition: all 300ms ease-out;  
+}
+
+figure.proj-effect figcaption {
+	text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+}
+
+figure.proj-effect figcaption > div {
+	position: absolute;
+	padding: 2em;
+    width: 87%;
+    height: 80%;
+    vertical-align: middle;
+}
+
+figure.proj-effect h1 {
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+figure.proj-effect:hover h1 {
+    opacity: 1;
+}
+
+
+figure.proj-effect p {
+	color: rgba(0, 0, 0, 0.8);
+	opacity: 1;
+}
+
+figure.proj-effect p.project-desc {
+    opacity: 0;
+}
+
+figure.proj-effect:hover p.project-desc {
+    opacity: .8;
+}
+
+figure.proj-effect:hover img,
+figure.proj-effect:hover p {
+	opacity: .1;
+}
+
+@media screen and (max-width: 1402px){
+    
+    .site-wrapper {
+        height: 79%;
+    }
+
+    .title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5em;
+        text-align: center;
+        letter-spacing: -2px;
+    }
+    
+    .subtitle {
+        font-size: 2.8em;
+        margin-top: 0;
+    }
+    
+    .newtop {
+        top: 71%;
+    }
+    
+    .newpage {
+        height: 57%;
+    }
+    
+}
+
+@media screen and (max-width: 1100px){
+    
+    .boxpadding {
+        padding: 50px 30px 50px 30px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    header {
+        display: none;
+    }
+    
+    .newpage {
+        margin-top: 20%;
+    }
+    
+    .newtop {
+        top: 80%;
+    }
+    
+    .site-wrapper {
+        display: table;
+        width: 100%;
+        position: fixed;
+        font-family: monospace, sans-serif;
+        top: 0px;
+    }
+
+    .site-wrapper-about {
+        font-size: 15px;
+        line-height: 22px;
+        text-shadow: 1px 1px 1px #3daaa3;
+    }
+    
+    .site-wrapper-about, .site-wrapper-projects, .site-wrapper-footer {
+        top: 80%;
+    }
+    
+    .screenshots img {
+        min-width: 80%;
+    }
+    
+    .button {
+        font-size: 1.1em;
+    }
+    
+    .grid figure {
+        margin: 10px 10px 0 10px;
+        min-width: 260px;
+    }
+    
+    .grid figure img {
+        height: 175px;
+    }
+    
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+        top: -50px;
+        font-size: .5em;
+    }
+    
+}
